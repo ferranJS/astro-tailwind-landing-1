@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro"
 import ShoppingCartIcon from "../components/ShoppingCartIcon.astro"
+import Section1 from "../components/Section1.astro"
 ---
 
 <MainLayout title="La Velada del Año">
@@ -15,53 +16,7 @@ import ShoppingCartIcon from "../components/ShoppingCartIcon.astro"
     </button>
   </header>
   <main>
-    <section
-      class="relative flex h-[35vh] w-screen overflow-hidden bg-cover bg-center bg-no-repeat md:mt-28 md:h-screen"
-      style="background-image: url('FONDO.jpg')"
-    >
-      <div class="relative w-full">
-        <img
-          class="objct-contain absolute bottom-0 left-[50%] z-0 h-[65%]"
-          src="papigavi.webp"
-          alt="Papigavi"
-        />
-        <img
-          class="objct-contain absolute bottom-0 left-[46%] z-10 h-[70%]"
-          src="la-rivers.webp"
-          alt="La Rivers"
-        />
-        <img
-          class="objct-contain absolute bottom-0 left-[34%] z-20 h-[71%]"
-          src="fernanfloo.webp"
-          alt="Fernanfloo"
-        />
-        <img class="objct-contain absolute bottom-0 left-[15%] z-30 h-[76%]" src="viruzz.webp" alt="Viruzz" />
-        <img class="objct-contain absolute bottom-0 left-[6%] z-40 h-[79%]" src="mayichi.webp" alt="Mayichi" />
-        <img class="objct-contain absolute bottom-0 left-0 z-50 h-[103%]" src="coscu.webp" alt="Coscu" />
-      </div>
-      <div class="relative w-full">
-        <img
-          class="objct-contain absolute bottom-0 right-[50%] z-0 h-[65%]"
-          src="ampeter.webp"
-          alt="Ampeter"
-        />
-        <img class="objct-contain absolute bottom-0 right-[45%] z-10 h-[69%]" src="rivers.webp" alt="Rivers" />
-        <img class="objct-contain absolute bottom-0 right-[33%] z-20 h-[72%]" src="luzu.webp" alt="Luzu" />
-        <img class="objct-contain absolute bottom-0 right-[18%] z-30 h-[78%]" src="shelao.webp" alt="Shelao" />
-        <img
-          class="objct-contain absolute bottom-0 right-[8%] z-40 h-[80%]"
-          src="amouranth.webp"
-          alt="Amouranth"
-        />
-        <img class="objct-contain absolute bottom-0 right-0 z-50 h-[100%]" src="german.webp" alt="German" />
-      </div>
-      <img
-        class="absolute left-1/2 top-[10%] h-[22%] -translate-x-1/2"
-        src="logo.webp"
-        alt="la velada del año logo"
-      />
-    </section>
-    <section class="h-screen w-screen" style="background-image: url('FONDO.jpg')"></section>
+    <Section1 />
   </main>
   <footer></footer>
 </MainLayout>
