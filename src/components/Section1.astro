@@ -4,37 +4,37 @@
 >
   <div class="relative w-full">
     <img
-      class="objct-contain duration slide-right anim-delay-5 pointer-events-none absolute bottom-0 left-[50%] z-0 h-[65%]"
+      class="objct-contain slide-right anim-delay-5 pointer-events-none absolute bottom-0 left-[50%] z-0 h-[65%] duration-300"
       src="papigavi.webp"
       alt="Papigavi"
     />
     <div class="absolute bottom-0 left-[50%] z-0 h-[65%] w-[29%]"></div>
     <img
-      class="objct-contain duration slide-right anim-delay-4 pointer-events-none absolute bottom-0 left-[46%] z-10 h-[70%]"
+      class="objct-contain slide-right anim-delay-4 pointer-events-none absolute bottom-0 left-[46%] z-10 h-[70%] duration-300"
       src="la-rivers.webp"
       alt="La Rivers"
     />
     <div class="absolute bottom-0 left-[46%] z-10 h-[70%] w-[25%]"></div>
     <img
-      class="objct-contain duration slide-right anim-delay-3 pointer-events-none absolute bottom-0 left-[34%] z-20 h-[71%]"
+      class="objct-contain slide-right anim-delay-3 pointer-events-none absolute bottom-0 left-[34%] z-20 h-[71%] duration-300"
       src="fernanfloo.webp"
       alt="Fernanfloo"
     />
-    <div class="absolute bottom-0 left-[34%] z-20 h-[71%] w-[27%]"></div>
+    <div class="absolute bottom-0 left-[33%] z-20 h-[71%] w-[27%]"></div>
     <img
-      class="objct-contain duration slide-right anim-delay-2 pointer-events-none absolute bottom-0 left-[15%] z-30 h-[76%]"
+      class="objct-contain slide-right anim-delay-2 pointer-events-none absolute bottom-0 left-[15%] z-30 h-[76%] duration-300"
       src="viruzz.webp"
       alt="Viruzz"
     />
-    <div class="absolute bottom-0 left-[15%] z-30 h-[76%] w-[35%]"></div>
+    <div class="absolute bottom-0 left-[18%] z-30 h-[76%] w-[35%]"></div>
     <img
-      class="objct-contain duration slide-right anim-delay-1 pointer-events-none absolute bottom-0 left-[6%] z-40 h-[79%]"
+      class="objct-contain slide-right anim-delay-1 pointer-events-none absolute bottom-0 left-[6%] z-40 h-[79%] duration-300"
       src="mayichi.webp"
       alt="Mayichi"
     />
     <div class="absolute bottom-0 left-[6%] z-40 h-[79%] w-[33%]"></div>
     <img
-      class="objct-contain duration slide-right slide-right anim-delay-0 pointer-events-none absolute bottom-0 left-0 z-50 h-[103%]"
+      class="objct-contain slide-right slide-right anim-delay-0 pointer-events-none absolute bottom-0 left-0 z-50 h-[103%] duration-300"
       src="coscu.webp"
       alt="Coscu"
     />
@@ -42,37 +42,37 @@
   </div>
   <div class="relative w-full">
     <img
-      class="objct-contain duration slide-left anim-delay-5 pointer-events-none absolute bottom-0 right-[50%] z-0 h-[65%]"
+      class="objct-contain slide-left anim-delay-5 pointer-events-none absolute bottom-0 right-[50%] z-0 h-[65%] duration-300"
       src="ampeter.webp"
       alt="Ampeter"
     />
     <div class="absolute bottom-0 right-[50%] z-0 h-[65%] w-[29%]"></div>
     <img
-      class="objct-contain duration slide-left anim-delay-4 pointer-events-none absolute bottom-0 right-[45%] z-10 h-[69%]"
+      class="objct-contain slide-left anim-delay-4 pointer-events-none absolute bottom-0 right-[45%] z-10 h-[69%] duration-300"
       src="rivers.webp"
       alt="Rivers"
     />
     <div class="absolute bottom-0 right-[45%] z-10 h-[69%] w-[25%]"></div>
     <img
-      class="objct-contain duration slide-left anim-delay-3 pointer-events-none absolute bottom-0 right-[33%] z-20 h-[72%]"
+      class="objct-contain slide-left anim-delay-3 pointer-events-none absolute bottom-0 right-[33%] z-20 h-[72%] duration-300"
       src="luzu.webp"
       alt="Luzu"
     />
     <div class="absolute bottom-0 right-[33%] z-20 h-[72%] w-[27%]"></div>
     <img
-      class="objct-contain duration slide-left anim-delay-2 pointer-events-none absolute bottom-0 right-[18%] z-30 h-[78%]"
+      class="objct-contain slide-left anim-delay-2 pointer-events-none absolute bottom-0 right-[18%] z-30 h-[78%] duration-300"
       src="shelao.webp"
       alt="Shelao"
     />
     <div class="absolute bottom-0 right-[18%] z-30 h-[78%] w-[31%]"></div>
     <img
-      class="objct-contain duration slide-left anim-delay-1 pointer-events-none absolute bottom-0 right-[8%] z-40 h-[80%]"
+      class="objct-contain slide-left anim-delay-1 pointer-events-none absolute bottom-0 right-[8%] z-40 h-[80%] duration-300"
       src="amouranth.webp"
       alt="Amouranth"
     />
     <div class="absolute bottom-0 right-[8%] z-40 h-[80%] w-[31%]"></div>
     <img
-      class="objct-contain duration slide-left anim-delay-0 pointer-events-none absolute bottom-0 right-0 z-50 h-[100%]"
+      class="objct-contain slide-left anim-delay-0 pointer-events-none absolute bottom-0 right-0 z-50 h-[100%] duration-300"
       src="german.webp"
       alt="German"
     />
@@ -92,12 +92,40 @@
   const leftSideDivs = document.querySelectorAll("section div:nth-child(2) div")
   rightSideDivs.forEach((_, i) => {
     function focusPerson() {
-      rightSideImgs[i]!.classList.add("!scale-150")
-      leftSideImgs[i]!.classList.add("!scale-150")
+      rightSideImgs[i]!.classList.add("!scale-110")
+      leftSideImgs[i]!.classList.add("!scale-110")
+      rightSideImgs[i]!.classList.add("z-[55]")
+      leftSideImgs[i]!.classList.add("z-[55]")
+      function blurPerson(img, j) {
+        if (i !== j) {
+          img.classList.add("saturate-0")
+          img.classList.add("blur-[2px]")
+        }
+      }
+      rightSideImgs.forEach((img, j) => {
+        blurPerson(img, j)
+      })
+      leftSideImgs.forEach((img, j) => {
+        blurPerson(img, j)
+      })
     }
     function unfocusPerson() {
-      rightSideImgs[i]!.classList.remove("!scale-150")
-      leftSideImgs[i]!.classList.remove("!scale-150")
+      rightSideImgs[i]!.classList.remove("!scale-110")
+      leftSideImgs[i]!.classList.remove("!scale-110")
+      rightSideImgs[i]!.classList.remove("z-[55]")
+      leftSideImgs[i]!.classList.remove("z-[55]")
+      function unblurPerson(img, j) {
+        if (i !== j) {
+          img.classList.remove("saturate-0")
+          img.classList.remove("blur-[2px]")
+        }
+      }
+      rightSideImgs.forEach((img, j) => {
+        unblurPerson(img, j)
+      })
+      leftSideImgs.forEach((img, j) => {
+        unblurPerson(img, j)
+      })
     }
     leftSideDivs[i].addEventListener("mouseenter", focusPerson)
     rightSideDivs[i].addEventListener("mouseenter", focusPerson)
@@ -119,7 +147,7 @@
       opacity: 0;
     }
     100% {
-      transform: translate(0);
+      translate: 0;
       opacity: 1;
     }
   }
@@ -129,7 +157,7 @@
       opacity: 0;
     }
     100% {
-      transform: translate(0);
+      translate: 0;
       opacity: 1;
     }
   }
