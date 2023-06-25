@@ -8,10 +8,15 @@ const { title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="This reimagined landing page clone was made in a few days by Ferran Ramírez 
+      (ferranJS) for fun, using Tailwind as an improvement for faster CSS coding and Astro for good performance and comfortable web development"
+    />
     <slot name="head-tags" />
     <title>{title}</title>
   </head>
-  <body class="bg-white overflow-x-hidden">
+  <body class="overflow-x-hidden bg-white">
     <slot />
   </body>
 </html>
