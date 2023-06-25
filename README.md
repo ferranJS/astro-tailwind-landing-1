@@ -5,6 +5,7 @@ Made in a week with [Tailwind](https://tailwindcss.com/) as an improvement for f
 Features:
 - Complex starting and hover animations
 - **Responsive** design
+- Only 1.4MB bundle size
 - Optimized images using **WebP**, **Avif** formats and **fetchpriority** loading 
 - **SEO** friendly
 
