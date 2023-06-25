@@ -2,7 +2,11 @@
 
 Made in a week with [Tailwind](https://tailwindcss.com/) as an improvement for faster CSS coding and [Astro](https://astro.build/) for good performance (packs with [Vite](https://vitejs.dev/)) and comfortable web development. 
 
-This page **automatically detects** your language and changes the content accordingly and **instantly**.  
+Features:
+- Complex starting and hover animations
+- **Responsive** design
+- Optimized images using **WebP**, **Avif** formats and **fetchpriority** loading 
+- **SEO** friendly
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ferranJS/astro-tailwind-landing-1)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/ferranJS/astro-tailwind-landing-1)
