@@ -28,7 +28,7 @@
       alt="Mayichi"
       id="Mayichi"
     />
-    <img class="slide-right anim-delay-0 left-0 z-50 h-[103%]" src="coscu.webp" alt="Coscu" id="Coscu" />
+    <img class="slide-right left-0 z-50 h-[103%]" src="coscu.webp" alt="Coscu" id="Coscu" />
   </div>
   <div class="relative w-full">
     <img
@@ -46,7 +46,7 @@
       alt="Amouranth"
       id="Amouranth"
     />
-    <img class="slide-left anim-delay-0 right-0 z-50 h-[100%]" src="german.webp" alt="German" id="German" />
+    <img class="slide-left right-0 z-50 h-[100%]" src="german.webp" alt="German" id="German" />
   </div>
   <img
     class="absolute left-1/2 top-[2%] z-[5] h-[42%] -translate-x-1/2 md:top-[7%] md:h-[30%]"
@@ -59,40 +59,42 @@
 <script>
   const rightSideImgs = document.querySelectorAll("section div:nth-child(1) img")
   const leftSideImgs = document.querySelectorAll("section div:nth-child(2) img")
-  rightSideImgs.forEach((_, i) => {
-    function focusPerson() {
-      rightSideImgs[i]!.classList.add("!scale-110")
-      leftSideImgs[i]!.classList.add("!scale-110")
-      rightSideImgs[i]!.classList.add("z-[55]")
-      leftSideImgs[i]!.classList.add("z-[55]")
-      function blurPerson(img, j) {
-        if (i !== j) {
-          img.classList.add("saturate-0")
-          img.classList.add("blur-[2px]")
+  const initHoverEffect = () =>
+    rightSideImgs.forEach((_, i) => {
+      function focusPerson() {
+        rightSideImgs[i]!.classList.add("!scale-110")
+        leftSideImgs[i]!.classList.add("!scale-110")
+        rightSideImgs[i]!.classList.add("z-[55]")
+        leftSideImgs[i]!.classList.add("z-[55]")
+        function blurPerson(img, j) {
+          if (i !== j) {
+            img.classList.add("saturate-0")
+            img.classList.add("blur-[2px]")
+          }
         }
+        rightSideImgs.forEach((img, j) => blurPerson(img, j))
+        leftSideImgs.forEach((img, j) => blurPerson(img, j))
       }
-      rightSideImgs.forEach((img, j) => blurPerson(img, j))
-      leftSideImgs.forEach((img, j) => blurPerson(img, j))
-    }
-    function unfocusPerson() {
-      rightSideImgs[i]!.classList.remove("!scale-110")
-      leftSideImgs[i]!.classList.remove("!scale-110")
-      rightSideImgs[i]!.classList.remove("z-[55]")
-      leftSideImgs[i]!.classList.remove("z-[55]")
-      function unblurPerson(img, j) {
-        if (i !== j) {
-          img.classList.remove("saturate-0")
-          img.classList.remove("blur-[2px]")
+      function unfocusPerson() {
+        rightSideImgs[i]!.classList.remove("!scale-110")
+        leftSideImgs[i]!.classList.remove("!scale-110")
+        rightSideImgs[i]!.classList.remove("z-[55]")
+        leftSideImgs[i]!.classList.remove("z-[55]")
+        function unblurPerson(img, j) {
+          if (i !== j) {
+            img.classList.remove("saturate-0")
+            img.classList.remove("blur-[2px]")
+          }
         }
+        rightSideImgs.forEach((img, j) => unblurPerson(img, j))
+        leftSideImgs.forEach((img, j) => unblurPerson(img, j))
       }
-      rightSideImgs.forEach((img, j) => unblurPerson(img, j))
-      leftSideImgs.forEach((img, j) => unblurPerson(img, j))
-    }
-    leftSideImgs[i].addEventListener("mouseenter", focusPerson)
-    rightSideImgs[i].addEventListener("mouseenter", focusPerson)
-    leftSideImgs[i].addEventListener("mouseleave", unfocusPerson)
-    rightSideImgs[i].addEventListener("mouseleave", unfocusPerson)
-  })
+      leftSideImgs[i].addEventListener("mouseenter", focusPerson)
+      rightSideImgs[i].addEventListener("mouseenter", focusPerson)
+      leftSideImgs[i].addEventListener("mouseleave", unfocusPerson)
+      rightSideImgs[i].addEventListener("mouseleave", unfocusPerson)
+    })
+  setTimeout(initHoverEffect, 2200)
 </script>
 
 <style>
@@ -258,22 +260,19 @@
       opacity: 1;
     }
   }
-  .anim-delay-0 {
+  .anim-delay-1 {
     animation-delay: 0.5s;
   }
-  .anim-delay-1 {
+  .anim-delay-2 {
     animation-delay: 1s;
   }
-  .anim-delay-2 {
+  .anim-delay-3 {
     animation-delay: 1.5s;
   }
-  .anim-delay-3 {
+  .anim-delay-4 {
     animation-delay: 2s;
   }
-  .anim-delay-4 {
-    animation-delay: 2.5s;
-  }
   .anim-delay-5 {
-    animation-delay: 3s;
+    animation-delay: 2.5s;
   }
 </style>
