@@ -9,6 +9,8 @@ Features:
 - Optimized images using **WebP**, **Avif** formats and **fetchpriority** loading 
 - **SEO** friendly
 
+[PageSpeed Insights](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-astro-tailwind-landing-1/k34j9xr5ds?form_factor=desktop)
+
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ferranJS/astro-tailwind-landing-1)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/ferranJS/astro-tailwind-landing-1)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ferranJS/astro-tailwind-landing-1?devcontainer_path=.devcontainer/basics/devcontainer.json)
