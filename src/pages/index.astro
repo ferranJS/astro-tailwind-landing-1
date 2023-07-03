@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro"
 import ShoppingCartIcon from "../components/ShoppingCartIcon.astro"
 import Section1 from "../components/Section1.astro"
+import Socials from "../components/Socials.astro";
 ---
 
 <MainLayout title="La Velada del Año">
@@ -16,14 +17,16 @@ import Section1 from "../components/Section1.astro"
         fetchpriority="high"
       />
     </a>
-    <button
-      class="flex items-center gap-1 rounded-sm bg-black p-1 px-4 text-xl font-bold uppercase italic text-white duration-150 hover:opacity-80"
+    <a
+      href="https://github.com/ferranJS"
+      class="flex items-center gap-2 rounded-sm bg-black p-1 px-4 text-xl font-bold uppercase italic text-white duration-150 hover:opacity-80"
     >
-      <a href="https://github.com/ferranJS">Tienda <ShoppingCartIcon height="20" /></a>
-    </button>
+      Tienda <ShoppingCartIcon height="20" />
+    </a>
   </header>
   <main>
     <Section1 />
   </main>
   <footer></footer>
+  <Socials />
 </MainLayout>
