@@ -1,12 +1,13 @@
 # [laVelada.es Landing Rework](https://ferranjs.github.io/astro-tailwind-landing-1/) ⬅
 
-This landing is a reimagining of the original one a made in a few days with [Tailwind](https://tailwindcss.com/) as an improvement for faster CSS coding and [Astro](https://astro.build/) for good performance (packs with [Vite](https://vitejs.dev/)) and comfortable web development. 
+This landing is a reimagining of the original one a made in a few days with [Tailwind](https://tailwindcss.com/) as an improvement for faster CSS coding and [Astro](https://astro.build/) for good performance (packs with [Vite](https://vitejs.dev/)) and comfortable web development.
 
 Features:
+
 - Complex starting and hover animations
 - **Responsive** design
 - Only 800kB bundle size including images
-- Optimized images using **WebP**, **Avif** formats and **fetchpriority** loading 
+- Optimized images using **WebP**, **Avif** formats and **fetchpriority** loading
 - **SEO** friendly
 
 [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-astro-tailwind-landing-1/k34j9xr5ds?form_factor=desktop)

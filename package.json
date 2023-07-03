@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "ts-standard": "ts-standard"
+    "ts-standard": "ts-standard",
+    "prettify": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
