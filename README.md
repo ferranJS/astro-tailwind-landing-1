@@ -8,6 +8,7 @@ Features:
 - **Responsive** design
 - Only 800kB bundle size including images
 - Optimized images using **WebP**, **Avif** formats and **fetchpriority** loading
+- "Clip-pathed" images for best hover experience
 - **SEO** friendly
 
 [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-astro-tailwind-landing-1/k34j9xr5ds?form_factor=desktop)
