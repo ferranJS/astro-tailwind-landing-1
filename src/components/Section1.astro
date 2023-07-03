@@ -1,52 +1,106 @@
 <section
-  class="relative flex h-[35vh] w-screen overflow-hidden bg-cover bg-center bg-no-repeat md:mt-28 md:h-[calc(100vh-112px)] [&>div>img]:absolute [&>div>img]:bottom-0 [&>div>img]:duration-300"
+  class="relative flex h-[35vh] w-screen overflow-hidden bg-cover bg-center bg-no-repeat md:mt-28 md:h-[calc(100vh-112px)] [&>div>picture>img]:absolute [&>div>picture>img]:bottom-0 [&>div>picture>img]:duration-300"
   style="background-image: url('background.webp')"
 >
   <div class="relative w-full">
-    <img
-      class="slide-right anim-delay-5 left-[50%] z-10 h-[65%]"
-      src="papigavi.webp"
-      alt="Papigavi"
-      id="Papigavi"
-    />
-    <img
-      class="slide-right anim-delay-4 left-[46%] z-20 h-[70%]"
-      src="la-rivers.webp"
-      alt="La Rivers"
-      id="La-Rivers"
-    />
-    <img
-      class="slide-right anim-delay-3 left-[34%] z-30 h-[71%]"
-      src="fernanfloo.webp"
-      alt="Fernanfloo"
-      id="Fernanfloo"
-    />
-    <img class="slide-right anim-delay-2 left-[15%] z-40 h-[76%]" src="viruzz.webp" alt="Viruzz" id="Viruzz" />
-    <img
-      class="slide-right anim-delay-1 left-[6%] z-50 h-[79%]"
-      src="mayichi.webp"
-      alt="Mayichi"
-      id="Mayichi"
-    />
-    <img class="slide-right left-0 z-50 h-[103%]" src="coscu.webp" alt="Coscu" id="Coscu" />
+    <picture>
+      <img
+        class="slide-right anim-delay-5 left-[50%] z-10 h-[65%]"
+        src="avif/papigavi.avif"
+        alt="Papigavi"
+        id="Papigavi"
+      />
+      <source srcset="papigavi.webp" type="image/webp" />
+    </picture>
+    <picture>
+      <img
+        class="slide-right anim-delay-4 left-[46%] z-20 h-[70%]"
+        src="avif/la-rivers.avif"
+        alt="La Rivers"
+        id="La-Rivers"
+      />
+      <source srcset="la-rivers.webp" type="image/webp" />
+    </picture>
+    <picture>
+      <img
+        class="slide-right anim-delay-3 left-[34%] z-30 h-[71%]"
+        src="fernanfloo.webp"
+        alt="Fernanfloo"
+        id="Fernanfloo"
+      />
+      <source srcset="fernanfloo.webp" type="image/webp" />
+    </picture>
+    <picture>
+      <img
+        class="slide-right anim-delay-2 left-[15%] z-40 h-[76%]"
+        src="avif/viruzz.avif"
+        alt="Viruzz"
+        id="Viruzz"
+      />
+      <source srcset="viruzz.webp" type="image/webp" />
+    </picture>
+
+    <picture>
+      <img
+        class="slide-right anim-delay-1 left-[6%] z-50 h-[79%]"
+        src="avif/mayichi.avif"
+        alt="Mayichi"
+        id="Mayichi"
+      />
+      <source srcset="mayichi.webp" type="image/webp" />
+    </picture>
+    <picture>
+      <img class="slide-right left-0 z-50 h-[103%]" src="avif/coscu.avif" alt="Coscu" id="Coscu" />
+      <source srcset="coscu.webp" type="image/webp" />
+    </picture>
   </div>
   <div class="relative w-full">
+    <picture>
+      <img
+        class="slide-left anim-delay-5 right-[50%] z-10 h-[65%]"
+        src="avif/ampeter.avif"
+        alt="Ampeter"
+        id="Ampeter"
+      />
+      <source srcset="ampeter.webp" type="image/webp" />
+    </picture>
+    <picture>
+      <img
+        class="slide-left anim-delay-4 right-[45%] z-20 h-[69%]"
+        src="avif/rivers.avif"
+        alt="Rivers"
+        id="Rivers"
+      />
+      <source srcset="rivers.webp" type="image/webp" />
+    </picture>
+    <picture>
+      <img
+        class="slide-left anim-delay-3 right-[33%] z-30 h-[72%]"
+        src="avif/luzu.avif"
+        alt="Luzu"
+        id="Luzu"
+      />
+      <source srcset="luzu.webp" type="image/webp" />
+    </picture>
+    <picture>
+      <img
+        class="slide-left anim-delay-2 right-[18%] z-40 h-[78%]"
+        src="avif/shelao.avif"
+        alt="Shelao"
+        id="Shelao"
+      />
+      <source srcset="shelao.webp" type="image/webp" />
+    </picture>
     <img
-      class="slide-left anim-delay-5 right-[50%] z-10 h-[65%]"
-      src="ampeter.webp"
-      alt="Ampeter"
-      id="Ampeter"
-    />
-    <img class="slide-left anim-delay-4 right-[45%] z-20 h-[69%]" src="rivers.webp" alt="Rivers" id="Rivers" />
-    <img class="slide-left anim-delay-3 right-[33%] z-30 h-[72%]" src="luzu.webp" alt="Luzu" id="Luzu" />
-    <img class="slide-left anim-delay-2 right-[18%] z-40 h-[78%]" src="shelao.webp" alt="Shelao" id="Shelao" />
-    <img
-      class="slide-left anim-delay-1 right-[8%] z-50 h-[80%]"
+      class="absolute bottom-0 slide-left anim-delay-1 right-[8%] z-50 h-[80%]"
       src="amouranth.webp"
       alt="Amouranth"
       id="Amouranth"
     />
-    <img class="slide-left right-0 z-50 h-[100%]" src="german.webp" alt="German" id="German" />
+    <picture>
+      <img class="slide-left right-0 z-50 h-[100%]" src="avif/german.avif" alt="German" id="German" />
+      <source srcset="german.webp" type="image/webp" />
+    </picture>
   </div>
   <a href="https://github.com/ferranJS/astro-tailwind-landing-1">
     <img

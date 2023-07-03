@@ -5,7 +5,7 @@ This landing is a reimagining of the original one a made in a few days with [Tai
 Features:
 - Complex starting and hover animations
 - **Responsive** design
-- Only 1.4MB bundle size
+- Only 1.1MB bundle size including images
 - Optimized images using **WebP**, **Avif** formats and **fetchpriority** loading 
 - **SEO** friendly
 
