@@ -96,20 +96,20 @@ import VersusText from "./VersusText.astro"
       <img class="slide-left right-0 z-50 h-[100%]" src="avif/german.avif" alt="German" id="German" />
     </picture>
   </div>
-  <a href="https://github.com/ferranJS/astro-tailwind-landing-1">
-    <img
-      class="absolute left-1/2 top-[2%] z-[5] h-[42%] -translate-x-1/2 md:top-[7%] md:h-[30%]"
-      src="webp/logo.webp"
-      alt="la velada del año logo"
-      fetchpriority="high"
-    />
-  </a>
+  <!-- <a href="https://github.com/ferranJS/astro-tailwind-landing-1"> -->
+  <img
+    class="absolute left-1/2 top-[2%] z-[5] h-[42%] -translate-x-1/2 duration-300 hover:scale-[105%] md:top-[7%] md:h-[30%]"
+    src="webp/logo.webp"
+    alt="la velada del año logo"
+    fetchpriority="high"
+  />
+  <!-- </a> -->
   <VersusText leftFighter="" rightFighter="" />
 </section>
 
 <script>
-  const leftSideImgs = document.querySelectorAll("section div:nth-child(2) img") as HTMLImageElement[]
-  const rightSideImgs = document.querySelectorAll("section div:nth-child(1) img") as HTMLImageElement[]
+  const leftSideImgs = document.querySelectorAll("section div:nth-child(1) img") as HTMLImageElement[]
+  const rightSideImgs = document.querySelectorAll("section div:nth-child(2) img") as HTMLImageElement[]
   const leftFighterName = document.querySelector("#left-fighter") as HTMLParagraphElement
   const rightFighterName = document.querySelector("#right-fighter") as HTMLParagraphElement
   const versusText = document.querySelector("#versus-text") as HTMLDivElement
@@ -119,14 +119,14 @@ import VersusText from "./VersusText.astro"
   const setVersusText = (rightSideImg: HTMLImageElement, leftSideImg: HTMLImageElement) => {
     leftFighterName.textContent = leftSideImg.alt
     rightFighterName.textContent = rightSideImg.alt
-    vs.classList.add("scale-[190%]")
+    vs.classList.add("scale-[2]")
     versusText.classList.remove("opacity-0")
     leftFighterName.classList.add("!-translate-x-1/2")
     rightFighterName.classList.add("!translate-x-1/2")
   }
   const unsetVersusText = () => {
     if (timeOut) clearTimeout(timeOut)
-    vs.classList.remove("scale-[190%]")
+    vs.classList.remove("scale-[2]")
     versusText.classList.add("opacity-0")
     leftFighterName.classList.remove("!-translate-x-1/2")
     rightFighterName.classList.remove("!translate-x-1/2")
