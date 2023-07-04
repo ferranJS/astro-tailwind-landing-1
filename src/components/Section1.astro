@@ -1,3 +1,7 @@
+---
+import VersusText from "./VersusText.astro"
+---
+
 <section
   class="relative flex h-[35vh] w-screen overflow-hidden bg-cover bg-center bg-no-repeat md:mt-28 md:h-[calc(100vh-112px)] [&>div>picture>img]:absolute [&>div>picture>img]:bottom-0 [&>div>picture>img]:duration-300"
   style="background-image: url('webp/background.webp')"
@@ -100,40 +104,66 @@
       fetchpriority="high"
     />
   </a>
+  <VersusText leftFighter="" rightFighter="" />
 </section>
 
 <script>
-  const rightSideImgs = document.querySelectorAll("section div:nth-child(1) img")
-  const leftSideImgs = document.querySelectorAll("section div:nth-child(2) img")
+  const leftSideImgs = document.querySelectorAll("section div:nth-child(2) img") as HTMLImageElement[]
+  const rightSideImgs = document.querySelectorAll("section div:nth-child(1) img") as HTMLImageElement[]
+  const leftFighterName = document.querySelector("#left-fighter") as HTMLParagraphElement
+  const rightFighterName = document.querySelector("#right-fighter") as HTMLParagraphElement
+  const versusText = document.querySelector("#versus-text") as HTMLDivElement
+  const vs = document.querySelector("#vs") as HTMLParagraphElement
+
+  let timeOut = 0
+  const setVersusText = (rightSideImg: HTMLImageElement, leftSideImg: HTMLImageElement) => {
+    leftFighterName.textContent = leftSideImg.alt
+    rightFighterName.textContent = rightSideImg.alt
+    vs.classList.add("scale-[190%]")
+    versusText.classList.remove("opacity-0")
+    leftFighterName.classList.add("!-translate-x-1/2")
+    rightFighterName.classList.add("!translate-x-1/2")
+  }
+  const unsetVersusText = () => {
+    if (timeOut) clearTimeout(timeOut)
+    vs.classList.remove("scale-[190%]")
+    versusText.classList.add("opacity-0")
+    leftFighterName.classList.remove("!-translate-x-1/2")
+    rightFighterName.classList.remove("!translate-x-1/2")
+  }
+
   const initHoverEffect = () =>
     rightSideImgs.forEach((_, i) => {
       function focusPerson() {
-        rightSideImgs[i]!.classList.add("!scale-110")
+        unsetVersusText()
+        timeOut = setTimeout(() => setVersusText(rightSideImgs[i], leftSideImgs[i]), 440)
         leftSideImgs[i]!.classList.add("!scale-110")
-        rightSideImgs[i]!.classList.add("z-[55]")
+        rightSideImgs[i]!.classList.add("!scale-110")
         leftSideImgs[i]!.classList.add("z-[55]")
+        rightSideImgs[i]!.classList.add("z-[55]")
         function blurPerson(img, j) {
           if (i !== j) {
             img.classList.add("saturate-0")
             img.classList.add("blur-[2px]")
           }
         }
-        rightSideImgs.forEach((img, j) => blurPerson(img, j))
         leftSideImgs.forEach((img, j) => blurPerson(img, j))
+        rightSideImgs.forEach((img, j) => blurPerson(img, j))
       }
       function unfocusPerson() {
-        rightSideImgs[i]!.classList.remove("!scale-110")
+        unsetVersusText()
         leftSideImgs[i]!.classList.remove("!scale-110")
-        rightSideImgs[i]!.classList.remove("z-[55]")
+        rightSideImgs[i]!.classList.remove("!scale-110")
         leftSideImgs[i]!.classList.remove("z-[55]")
+        rightSideImgs[i]!.classList.remove("z-[55]")
         function unblurPerson(img, j) {
           if (i !== j) {
             img.classList.remove("saturate-0")
             img.classList.remove("blur-[2px]")
           }
         }
-        rightSideImgs.forEach((img, j) => unblurPerson(img, j))
         leftSideImgs.forEach((img, j) => unblurPerson(img, j))
+        rightSideImgs.forEach((img, j) => unblurPerson(img, j))
       }
       leftSideImgs[i].addEventListener("mouseenter", focusPerson)
       rightSideImgs[i].addEventListener("mouseenter", focusPerson)
