@@ -16,7 +16,10 @@ Perfect [Google PageSpeed Insights Score](https://pagespeed.web.dev/analysis/htt
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/ferranJS/astro-tailwind-landing-1)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ferranJS/astro-tailwind-landing-1?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-<img src="https://github.com/ferranJS/astro-tailwind-landing-1/blob/main/public/landing-screenshot.gif" height="434px" alt="landing page screenshot">
+<p float="left">
+  <img src="https://github.com/ferranJS/astro-tailwind-landing-1/blob/main/public/landing-screenshot-2.gif" height="440px" alt="desktop view of ferranjs landing page screenshot">
+  <img src="https://github.com/ferranJS/astro-tailwind-landing-1/blob/main/public/landing-screenshot.gif" height="400px" alt="mobile view of ferranjs landing page screenshot">
+</p>
 
 This landing is a remake of the [original one](https://lavelada.es/), made in a few days with [Tailwind](https://tailwindcss.com/) as an improvement for faster CSS coding and [Astro](https://astro.build/) for good performance (packs with [Vite](https://vitejs.dev/)) and comfortable web development.
 
