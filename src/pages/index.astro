@@ -2,7 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro"
 import ShoppingCartIcon from "../components/ShoppingCartIcon.astro"
 import Section1 from "../components/Section1.astro"
-import Socials from "../components/Socials.astro"
+import Socials from "side-socials/Socials.astro"
 ---
 
 <MainLayout title="La Velada del Año">
@@ -22,6 +22,7 @@ import Socials from "../components/Socials.astro"
       class="flex items-center gap-2 rounded-sm bg-black p-1 px-4 text-xl font-bold uppercase italic text-white duration-150 hover:opacity-80"
     >
       Tienda <ShoppingCartIcon height="20" />
+      <img src="https://github.com/ferranJS/side-socials/blob/master/github.svg" alt="" />
     </a>
   </header>
   <main>
@@ -29,5 +30,4 @@ import Socials from "../components/Socials.astro"
   </main>
   <footer></footer>
   <Socials />
-  <!-- <iframe src="https://ferranjs.github.io/side-socials/" class="absolute z-[999999999]"></iframe> -->
 </MainLayout>
