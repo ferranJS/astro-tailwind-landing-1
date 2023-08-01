@@ -30,19 +30,5 @@ import Socials from "../components/Socials.astro"
   </main>
   <footer></footer>
   <Socials />
-  <script>
-    // driver.js
-    const driver = window.driver.js.driver
-
-    const driverObj = driver({
-      showProgress: true,
-      steps: [
-        { element: "#title", popover: { title: "The main title", description: "nice transition uwu" } },
-        { element: "#socials", popover: { title: "My socials", description: "so cooool" } },
-        { element: "#button", popover: { title: "A button", description: "hmmm just a button lol" } },
-      ],
-    })
-
-    setTimeout(driverObj.drive, 1000)
-  </script>
 </MainLayout>
+<script is:inline src={import.meta.env.BASE_URL + "/Drive.js"}></script>
