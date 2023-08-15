@@ -10,7 +10,7 @@ Features:
 - "Clip-pathed" images for best hover experience
 - Pre-commit Hooks with Husky & Lint-staged for a Prettier write
 
-Perfect [Google PageSpeed Insights Score](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-lavelada-remake/2gsa2cexd2?form_factor=desktop)
+Perfect [Google PageSpeed Insights Score](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-lavelada-remake/ahtri9058m?form_factor=desktop)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ferranJS/lavelada-remake)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/ferranJS/lavelada-remake)
