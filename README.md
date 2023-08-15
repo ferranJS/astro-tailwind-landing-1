@@ -1,4 +1,4 @@
-# [laVelada.es Landing Rework](https://ferranjs.github.io/astro-tailwind-landing-1/) ⬅
+# [laVelada.es Landing Rework](https://ferranjs.github.io/lavelada-remake/) ⬅
 
 Features:
 
@@ -10,18 +10,18 @@ Features:
 - "Clip-pathed" images for best hover experience
 - Pre-commit Hooks with Husky & Lint-staged for a Prettier write
 
-Perfect [Google PageSpeed Insights Score](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-astro-tailwind-landing-1/k34j9xr5ds?form_factor=desktop)
+Perfect [Google PageSpeed Insights Score](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-lavelada-remake/k34j9xr5ds?form_factor=desktop)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ferranJS/astro-tailwind-landing-1)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/ferranJS/astro-tailwind-landing-1)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ferranJS/astro-tailwind-landing-1?devcontainer_path=.devcontainer/basics/devcontainer.json)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ferranJS/lavelada-remake)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/ferranJS/lavelada-remake)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ferranJS/lavelada-remake?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
 <p float="left">
-  <a href="https://ferranjs.github.io/astro-tailwind-landing-1">
-    <img src="https://github.com/ferranJS/astro-tailwind-landing-1/blob/main/public/landing-screenshot-2.gif" width="197px" alt="desktop view of ferranjs landing page screenshot">
+  <a href="https://ferranjs.github.io/lavelada-remake">
+    <img src="https://github.com/ferranJS/lavelada-remake/blob/main/public/landing-screenshot-2.gif" width="197px" alt="desktop view of ferranjs landing page screenshot">
   </a>
-  <a href="https://ferranjs.github.io/astro-tailwind-landing-1">
-    <img src="https://github.com/ferranJS/astro-tailwind-landing-1/blob/main/public/landing-screenshot.gif" width="627px" alt="mobile view of ferranjs landing page screenshot">
+  <a href="https://ferranjs.github.io/lavelada-remake">
+    <img src="https://github.com/ferranJS/lavelada-remake/blob/main/public/landing-screenshot.gif" width="627px" alt="mobile view of ferranjs landing page screenshot">
   </a>
 </p>
 
@@ -35,7 +35,7 @@ This landing is a remake of the [original one](https://lavelada.es/), made in a 
 >     npm i -D prettier-plugin-tailwindcss // for prettier automatic tailwind class sorting
 >     npm i -D ts-standard // for linting
 
-- Set up Github Actions in settings and add _.github/workflows/_[_deploy.yml_ configuration](https://github.com/ferranJS/astro-tailwind-landing-1/blob/main/.github/workflows/deploy.yml) to the root of the project.
+- Set up Github Actions in settings and add _.github/workflows/_[_deploy.yml_ configuration](https://github.com/ferranJS/lavelada-remake/blob/main/.github/workflows/deploy.yml) to the root of the project.
 
 - Configure _astro.config.mjs_ following the [official docs](https://docs.astro.build/en/guides/deploy/github/) and add the base to all src in the project.
 
