@@ -18,7 +18,8 @@ import VersusText from "./VersusText.astro"
       />
     </picture>
     <picture>
-      <source srcset="avif/la-rivers.avif" type="image/avif" />
+      <source srcset="avif/la-rivers.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/la-rivers-mobile.avif" type="image/avif" />
       <source srcset="webp/la-rivers.webp" type="image/webp" />
       <img
         class="slide-right anim-delay-4 left-[46%] z-20 h-[70%]"
@@ -28,6 +29,9 @@ import VersusText from "./VersusText.astro"
       />
     </picture>
     <picture>
+      <source srcset="avif/fernanfloo.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/fernanfloo-mobile.avif" type="image/avif" />
+      <source srcset="webp/fernanfloo.webp" type="image/webp" />
       <img
         class="slide-right anim-delay-3 left-[34%] z-30 h-[71%]"
         src="webp/fernanfloo.webp"
@@ -36,17 +40,20 @@ import VersusText from "./VersusText.astro"
       />
     </picture>
     <picture>
-      <source srcset="avif/viruzz.avif" type="image/avif" />
+      <source srcset="avif/viruzz.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/viruzz-mobile.avif" type="image/avif" />
       <source srcset="webp/viruzz.webp" type="image/webp" />
       <img class="slide-right anim-delay-2 left-[15%] z-40 h-[76%]" alt="Viruzz" id="Viruzz" />
     </picture>
     <picture>
-      <source srcset="avif/mayichi.avif" type="image/avif" />
+      <source srcset="avif/mayichi.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/mayichi-mobile.avif" type="image/avif" />
       <source srcset="webp/mayichi.webp" type="image/webp" />
       <img class="slide-right anim-delay-1 left-[6%] z-50 h-[79%]" alt="Mayichi" id="Mayichi" />
     </picture>
     <picture>
-      <source srcset="avif/coscu.avif" type="image/avif" />
+      <source srcset="avif/coscu.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/coscu-mobile.avif" type="image/avif" />
       <source srcset="webp/coscu.webp" type="image/webp" />
       <img class="slide-right left-0 z-50 h-[103%]" alt="Coscu" id="Coscu" />
     </picture>
@@ -58,12 +65,14 @@ import VersusText from "./VersusText.astro"
       <img class="slide-left anim-delay-5 right-[50%] z-10 h-[65%]" alt="Ampeter" id="Ampeter" />
     </picture>
     <picture>
-      <source srcset="avif/rivers.avif" type="image/avif" />
+      <source srcset="avif/rivers.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/rivers-mobile.avif" type="image/avif" />
       <source srcset="webp/rivers.webp" type="image/webp" />
       <img class="slide-left anim-delay-4 right-[45%] z-20 h-[69%]" alt="Rivers" id="Rivers" />
     </picture>
     <picture>
-      <source srcset="avif/luzu.avif" type="image/avif" />
+      <source srcset="avif/luzu.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/luzu-mobile.avif" type="image/avif" />
       <source srcset="webp/luzu.webp" type="image/webp" />
       <img
         class="slide-left anim-delay-3 right-[33%] z-30 h-[72%]"
@@ -73,7 +82,8 @@ import VersusText from "./VersusText.astro"
       />
     </picture>
     <picture>
-      <source srcset="avif/shelao.avif" type="image/avif" />
+      <source srcset="avif/shelao.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/shelao-mobile.avif" type="image/avif" />
       <source srcset="webp/shelao.webp" type="image/webp" />
       <img
         class="slide-left anim-delay-2 right-[18%] z-40 h-[78%]"
@@ -83,27 +93,36 @@ import VersusText from "./VersusText.astro"
       />
     </picture>
     <picture>
+      <source srcset="avif/amouranth.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/amouranth-mobile.avif" type="image/avif" />
+      <source srcset="webp/amouranth.webp" type="image/webp" />
       <img
         class="slide-left anim-delay-1 right-[8%] z-50 h-[80%]"
-        src="webp/amouranth.webp"
+        src="webp/amouranth.avif"
         alt="Amouranth"
         id="Amouranth"
       />
     </picture>
     <picture>
-      <source srcset="avif/german.avif" type="image/avif" />
+      <source srcset="avif/german.avif" media="(min-width: 600px)" type="image/avif" />
+      <source srcset="avif/german-mobile.avif" type="image/avif" />
       <source srcset="webp/german.webp" type="image/webp" />
       <img class="slide-left right-0 z-50 h-[100%]" src="avif/german.avif" alt="German" id="German" />
     </picture>
   </div>
   <!-- <a href="https://github.com/ferranJS/lavelada-remake"> -->
-  <img
-    class="absolute left-1/2 top-[2%] z-[5] h-[42%] -translate-x-1/2 duration-300 hover:scale-[105%] md:top-[7%] md:h-[30%]"
-    src="webp/logo.webp"
-    alt="la velada del año logo"
-    fetchpriority="high"
-    id="lavelada-logo"
-  />
+  <picture>
+    <source srcset="avif/logo.avif" type="image/avif" />
+    <source srcset="webp/logo.webp" type="image/webp" />
+    <img
+      class="absolute left-1/2 top-[2%] z-[5] h-[42%] -translate-x-1/2 duration-300 hover:scale-[105%] md:top-[7%] md:h-[30%]"
+      src="webp/logo.webp"
+      alt="la velada del año logo"
+      fetchpriority="high"
+      id="lavelada-logo"
+    />
+  </picture>
+
   <!-- </a> -->
   <VersusText />
   <div id="driverjs-aux" class="absolute bottom-0 h-5/6 w-full"></div>

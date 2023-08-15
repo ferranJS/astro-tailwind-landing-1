@@ -3,14 +3,14 @@
 Features:
 
 - Complex starting and hover animations
-- Only **800kB bundle size** including images
+- Only **800kB bundle size (700kB in mobile)** including images
 - **Responsive** design
 - **SEO** friendly
 - Optimized images using **Avif** and **WebP** formats
 - "Clip-pathed" images for best hover experience
 - Pre-commit Hooks with Husky & Lint-staged for a Prettier write
 
-Perfect [Google PageSpeed Insights Score](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-lavelada-remake/k34j9xr5ds?form_factor=desktop)
+Perfect [Google PageSpeed Insights Score](https://pagespeed.web.dev/analysis/https-ferranjs-github-io-lavelada-remake/2gsa2cexd2?form_factor=desktop)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ferranJS/lavelada-remake)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/ferranJS/lavelada-remake)
