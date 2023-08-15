@@ -6,7 +6,8 @@ import Socials from "../components/Socials.astro"
 ---
 
 <MainLayout title="La Velada del Año">
-  <script slot="script" src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+  <script defer slot="script" src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"
+  ></script>
   <header
     class="left-0 right-0 top-0 z-[60] flex min-h-[7rem] flex-col items-center justify-center gap-5 bg-white p-10 md:fixed md:flex-row md:justify-between md:py-7"
   >
@@ -31,4 +32,4 @@ import Socials from "../components/Socials.astro"
   <footer></footer>
   <Socials />
 </MainLayout>
-<script is:inline src={import.meta.env.BASE_URL + "/Drive.js"}></script>
+<script defer is:inline src={import.meta.env.BASE_URL + "/Drive.js"}></script>

@@ -3,7 +3,7 @@
 Features:
 
 - Complex starting and hover animations
-- Only **800kB bundle size (700kB in mobile)** including images
+- Only **750kB bundle size (550kB in mobile)** including images
 - **Responsive** design
 - **SEO** friendly
 - Optimized images using **Avif** and **WebP** formats
